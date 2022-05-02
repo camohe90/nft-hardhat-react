@@ -9,7 +9,6 @@ function App() {
   return (
     <div className='overlay'>
       <div className="App">
-        <h1>New Ideas, new products</h1>
         <NavBar accounts = {accounts} setAccounts={setAccounts}/>
         <MainMint accounts = {accounts} setAccounts={setAccounts}/>
       </div>

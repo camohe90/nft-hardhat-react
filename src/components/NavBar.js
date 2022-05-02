@@ -17,21 +17,16 @@ const NavBar = ({accounts, setAccounts}) =>{
         }
     }
     return(
-        <Flex justify="space-between" align="center" padding="30px">
+        <Flex justify="space-between" align="center" padding="20px">
             {/* parte izquierda -> social media*/}
             <Flex justify="space-around" width="40%" padding="0 75px" >
                 <Link href="https://www.facebook.com">
                     <Image src={Facebook} boxSize="42px" margin= "0 15px"/>
                 </Link>
-            </Flex>
-
-            <Flex justify="space-around" width="40%" padding="0 75px" >
                 <Link href="https://www.twitter.com">
                     <Image src={Twitter} boxSize="42px" margin= "0 15px"/>
                 </Link>
-            </Flex>
 
-            <Flex justify="space-around" width="40%" padding="0 75px" >
                 <Link href="https://www.facebook.com">
                     <Image src={Email} boxSize="42px" margin= "0 15px"/>
                 </Link>
@@ -41,7 +36,7 @@ const NavBar = ({accounts, setAccounts}) =>{
 
             {/* parte derecha -> Secciones y Connect*/}
 
-            <Flex justify="space-between" align="center" width="40%" padding="30px">
+            <Flex justify="space-around" align="center" width="40%" padding="30px">
                 <Box margin="0 15px">About</Box>
                 <Spacer/>
                 <Box margin="0 15px">Mint</Box>
@@ -60,12 +55,11 @@ const NavBar = ({accounts, setAccounts}) =>{
                     fontFamily="inherit"
                     padding="15px"
                     margirn="0 15px"
-                onClick={connectAccount}>Connect</Button>
+                    onClick={connectAccount}>Connect</Button>
             )
             }
 
             </Flex>
-
 
         </Flex>
     );
