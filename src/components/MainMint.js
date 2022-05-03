@@ -26,7 +26,7 @@ const MainMint = ({accounts, setAccounts}) =>{
                 console.log('response', response);
 
             } catch(err){
-                console.log("error", err)
+                alert("error", err)
             }
         }
     }
@@ -44,11 +44,11 @@ const MainMint = ({accounts, setAccounts}) =>{
         <Flex justify="center" align="center" height="100vh" padding="150px">
             <Box width="520px">
                 <div>
-                    <Text fontSize="48px" textShadow="0 5px #000000">Car NFT</Text>
+                    <Text fontSize="48px" textShadow="0 5px #000000" fontWeight="Bold">Car NFT</Text>
                     <Text
                         fontSize="30px"
                         letterSpacing="-5.5%"
-                        fontFamily= "VT323"
+                        fontFamily= "Roboto"
                         textShadow="0 2px 2px #000000"
                     >
                         
@@ -74,8 +74,9 @@ const MainMint = ({accounts, setAccounts}) =>{
                             fontFamily="inherit"
                             width="100px"
                             height="40px"
-                            textAling="center"
                             paddingLeft="19px"
+                            fontSize="20px"
+                            textAlign="center"
                             marginTop="10px"
                             type="number" value={mintAmount}/>
                             <Button
@@ -87,6 +88,7 @@ const MainMint = ({accounts, setAccounts}) =>{
                             fontFamily="inherit"
                             padding="15px"
                             marginTop="10px"
+                            textAlign="center"
                             onClick={handleIncrement}>+</Button>
                         </Flex>
                         <Button
@@ -96,8 +98,10 @@ const MainMint = ({accounts, setAccounts}) =>{
                         color="white"
                         cursor="pointer"
                         fontFamily="inherit"
+                        fontSize="20px"
                         padding="15px"
                         marginTop="10px"
+                        fontWeight="Bold"
                         onClick={handleMint}>Mint</Button>
                     </div>
                 ):(
@@ -105,7 +109,7 @@ const MainMint = ({accounts, setAccounts}) =>{
                     marginTop="70px"
                     fontSize="30px"
                     letterSpacing="-5.5%"
-                    fontFamily="VT323"
+                    fontFamily="Roboto"
                     textShadow="0 3px #000000"
                     color="#D6517D"
                     >

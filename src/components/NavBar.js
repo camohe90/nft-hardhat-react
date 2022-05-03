@@ -36,7 +36,7 @@ const NavBar = ({accounts, setAccounts}) =>{
 
             {/* parte derecha -> Secciones y Connect*/}
 
-            <Flex justify="space-around" align="center" width="40%" padding="30px">
+            <Flex justify="space-around" align="center" width="40%" padding="30px" fontSize="25px">
                 <Box margin="0 15px">About</Box>
                 <Spacer/>
                 <Box margin="0 15px">Mint</Box>
@@ -53,6 +53,7 @@ const NavBar = ({accounts, setAccounts}) =>{
                     color="white"
                     cursor="pointer"
                     fontFamily="inherit"
+                    fontSize="20px"
                     padding="15px"
                     margirn="0 15px"
                     onClick={connectAccount}>Connect</Button>

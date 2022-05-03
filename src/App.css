@@ -2,11 +2,11 @@
 
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 @import url("https://fonts.googleapis.com/css?family=VT323");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 .App {
   text-align: center;
-  font-family: "Press Start 2P", "VT323";
+  font-family: "Roboto", "VT323";
   color: white;
 }
 
